@@ -28,5 +28,8 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
   }
 }

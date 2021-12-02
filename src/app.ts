@@ -1,3 +1,4 @@
 // app.ts
+import { doSweep } from "./01/sonar_sweep";
 
-export const foo = () => "foo";
+doSweep("input.txt");
