@@ -1,4 +1,5 @@
 // app.ts
 import { doSweep } from "./01/sonar_sweep";
 
-doSweep("input.txt");
+// day 1
+// doSweep("input.txt");

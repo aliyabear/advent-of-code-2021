@@ -27,3 +27,13 @@ describe("sonarSweep", () => {
     expect(result).toEqual(7);
   });
 });
+
+describe("threeWindowSweep", () => {
+  test("it returns 5, for given input", () => {
+    const measurements = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
+
+    const result = sut.threeWindowSweep(measurements);
+
+    expect(result).toEqual(5);
+  });
+});
