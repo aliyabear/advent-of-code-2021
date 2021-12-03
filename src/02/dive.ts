@@ -43,3 +43,28 @@ export const dive = (input: PuzzleInput[]): number => {
 
   return position[0] * position[1];
 };
+
+export const divePartTwo = (input: PuzzleInput[]): number => {
+  let horizontalPosition = 0;
+  let depth = 0;
+  let aim = 0;
+
+  for (const { command, value } of input) {
+    if (command === Command.FORWARD) {
+      horizontalPosition += value;
+      depth += aim * value;
+    } else {
+      if (command === Command.UP) {
+        aim -= value;
+      } else {
+        aim += value;
+      }
+    }
+
+    // console.log(
+    //   `horizontal: ${horizontalPosition} depth: ${depth} aim: ${aim}`
+    // );
+  }
+
+  return horizontalPosition * depth;
+};
